@@ -38,6 +38,7 @@ label {
 
 .input-container {
   display: flex;
+  padding: 0 50px 0 50px
 }
 
 input {

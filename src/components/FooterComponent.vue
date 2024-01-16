@@ -1,6 +1,6 @@
 <template>
   <footer class="app-footer">
-    <p>Developed with ❤ by Carlos Calleja</p>
+    <p>Developed with <span class="heart">❤ </span>by Carlos Calleja Saez</p>
     <div class="social-links">
       <a href="https://github.com/CarlosCallejaSaez" target="_blank" rel="noopener noreferrer">
         <img src="/github-logo.png" alt="GitHub" class="social-icon" />
@@ -19,7 +19,8 @@ export default {
 </script>
 
 <style scoped>
-
+.heart{
+color:red}
 
 .app-footer {
   position: fixed;
@@ -29,7 +30,7 @@ export default {
   
   text-align: center;
   
-  
+  background-color:rgba(10,161,245,0.87718837535014);
   color: black;
   border-radius: 0 0 8px 8px;
 }

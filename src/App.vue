@@ -1,63 +1,28 @@
 <template>
-  <div id="app" class="app-container">
-    <h1 class="app-title">Movie Search VUE</h1>
-    <search-form @search="searchMovie"></search-form>
-    <movie-details :movie="movie"></movie-details>
-    <Footer />
-
-    <div v-if="error" class="app-error-message">{{ error }}</div>
+  <div id="app">
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import SearchForm from '@/components/SearchForm.vue';
-import MovieDetails from '@/components/MovieDetails.vue';
-import Footer from "@/components/Footer.vue";
-
 export default {
-  components: {
-    SearchForm,
-    MovieDetails,
-    Footer
-  },
-  data() {
-    return {
-      movieTitle: '',
-      movie: null,
-      error: null,
-    };
-  },
-  methods: {
-    searchMovie(title) {
-      if (title.trim() === '') {
-        this.error = 'Please enter a valid movie ';
-        return;
-      }
-
-      this.error = null;
-
-      const apiKey = import.meta.env.VITE_APP_API_KEY;; 
-      const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(title)}`;
-
-      this.$axios
-        .get(apiUrl)
-        .then((response) => {
-          if (response.data.Response === 'True') {
-            this.movie = response.data;
-          } else {
-            this.error = 'Movie not found';
-          }
-        })
-        .catch((error) => {
-          this.error = 'Error finding the movie ';
-        });
-    },
-  },
+  name: "App",
 };
 </script>
 
-<style scoped>
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  
+}
 
+#app {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px; 
+  
+}
 h1{
  color:orange;
   margin-bottom: 20px;;
@@ -90,5 +55,4 @@ h1{
   border: 1px solid #f5c6cb;
   border-radius: 4px;
 }
-
 </style>
