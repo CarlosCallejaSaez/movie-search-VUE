@@ -1,5 +1,7 @@
 # Movie Search VUE App
 
+[🚀 Deploy Netlify](https://jazzy-duckanoo-1ea402.netlify.app/)
+
 ## Overview
 
 The Movie Information App is a simple web application that allows users to search for and retrieve information about movies using the Open Movie Database (OMDb) API.

@@ -37,7 +37,7 @@ export default {
       this.error = null;
 
       const apiKey = import.meta.env.VITE_APP_API_KEY;; 
-      const apiUrl = `http://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(title)}`;
+      const apiUrl = `https://www.omdbapi.com/?apikey=${apiKey}&t=${encodeURIComponent(title)}`;
 
       this.$axios
         .get(apiUrl)
