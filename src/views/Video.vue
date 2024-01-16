@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      videoUrl: "https://www.youtube.com/embed/y8IPr1Cdkzc",
+      videoUrl: "https://www.youtube.com/embed/tYceHX6bi_I",
     };
   },
   methods: {
