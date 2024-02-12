@@ -1,8 +1,8 @@
 <template>
   <div class="form-group">
-    <label for="movieTitle" style="color:orange;font-size:50px">Movie Title</label>
-    <div class="input-container">
-      <input v-model="movieTitle" id="movieTitle" class="form-control" />
+    <label for="movieTitle" style="color:#84b6f4;font-size:75px;font-weight:bold;background-color:rgba(245, 245, 245, 0.8);display:inline">Movie Title</label>
+    <div class="input-container" style="display:flex;justify-content:center">
+      <input v-model="movieTitle" id="movieTitle" class="form-control"  style="max-width:300px" />
       <button @click="searchMovie" class="search-button">search</button>
     </div>
   </div>
