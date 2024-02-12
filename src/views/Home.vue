@@ -2,7 +2,7 @@
   <div>
     <h1 class="app-title">Movie Search VUE</h1>
     <div>
-    <label for="demoVideo">If you want to see a demo video click the next button</label>
+    <label for="demoVideo" style="color:orange">If you want to see a demo video click the next button</label>
     </div>
      <router-link to="/video">
      
@@ -83,7 +83,7 @@ h1{
 .app-container {
   
   padding: 20px;
-  background-color: #f8f9fa;
+
   border: 1px solid #dee2e6;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -95,6 +95,7 @@ h1{
 .app-title {
   margin-bottom: 20px;
   font-size: 24px;
+  
 }
 
 .app-error-message {

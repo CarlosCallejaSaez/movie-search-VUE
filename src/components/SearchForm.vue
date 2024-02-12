@@ -1,6 +1,6 @@
 <template>
   <div class="form-group">
-    <label for="movieTitle">Movie Title</label>
+    <label for="movieTitle" style="color:orange;font-size:50px">Movie Title</label>
     <div class="input-container">
       <input v-model="movieTitle" id="movieTitle" class="form-control" />
       <button @click="searchMovie" class="search-button">search</button>
